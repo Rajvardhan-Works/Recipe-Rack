@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guilty Pleasure — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">RecipeRack</a>
+    <nav class="main-nav">
+      <a href="category-new-page1.html">New</a>
+      <a href="category-fitness-page1.html">Fitness Freak</a>
+      <a class="active" href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a href="category-broke-page1.html">Broke or Rock</a>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </div>
+  <nav id="mobile-menu" class="mobile-nav">
+      <a href="category-new-page1.html">New</a>
+      <a href="category-fitness-page1.html">Fitness Freak</a>
+      <a class="active" href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a href="category-broke-page1.html">Broke or Rock</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section class="category-hero">
+    <h1>Guilty Pleasure</h1>
+    <p class="muted">Indulgent comfort food — cheesy, chocolatey, buttery and worth every bite.</p>
+  </section>
+
+  <section class="recipes-grid">
+
+    <article class="recipe-card">
+      <a class="rc-img" href="recipe-guilty-001.html"><img src="images/com-French Fries.jpg" alt=""></a>
+      <div class="rc-body">
+        <h3><a href="recipe-guilty-001.html">Loaded Fries</a></h3>
+        <p class="muted small">12 min</p>
+        <p class="muted">Crispy fries topped with cheese, jalapeños & mayo.</p>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <a class="rc-img" href="recipe-guilty-002.html"><img src="images/com-Choco Lava Cake.jpg" alt=""></a>
+      <div class="rc-body">
+        <h3><a href="recipe-guilty-002.html">Chocolate Lava Cake</a></h3>
+        <p class="muted small">25 min</p>
+        <p class="muted">Warm chocolate cake with molten gooey center.</p>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <a class="rc-img" href="recipe-guilty-003.html"><img src="images/com-Chessy Pizza.jpg" alt=""></a>
+      <div class="rc-body">
+        <h3><a href="recipe-guilty-003.html">Cheese Burst Pizza</a></h3>
+        <p class="muted small">30 min</p>
+        <p class="muted">Thick pizza with a river of melted cheese inside.</p>
+      </div>
+    </article>
+
+  </section>
+
+  <nav class="pagination">
+    <a class="page current" href="#">1</a>
+    <a class="page" href="#">2</a>
+  </nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year2"></span> RecipeRack</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year2').textContent = new Date().getFullYear();
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.getElementById('mobile-menu').classList.toggle('open');
+});
+</script>
+
+</body>
+</html>

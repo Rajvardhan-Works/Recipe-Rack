@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grilled Chicken Salad — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">RecipeRack</a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="category-new-page1.html">New</a>
+        <a href="category-fitness-page1.html">Fitness Freak</a>
+        <a href="category-guilty-page1.html">Guilty Pleasure</a>
+        <a href="category-broke-page1.html">Broke or Rock</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container recipe-detail">
+    <article>
+      <header>
+        <h1>Grilled Chicken Salad</h1>
+        <p class="muted">Prep 10m • Cook 15m • Serves 2</p>
+      </header>
+
+      <figure class="detail-figure">
+        <a href="#img1" class="thumb">
+          <img src="images/Grilled Chicken Salad.jpg" alt="Grilled chicken salad close-up" width="180px">
+        </a>
+        <figcaption class="muted">Click image to enlarge.</figcaption>
+      </figure>
+
+      <div id="img1" class="modal" aria-hidden="true">
+        <div class="modal-inner">
+          <a class="modal-close" href="#close" aria-label="Close">✕</a>
+          <img src="images/Grilled Chicken Salad.jpg" alt="Grilled chicken salad large view" />
+        </div>
+      </div>
+
+      <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>200g chicken breast</li>
+          <li>4 cups mixed salad greens</li>
+          <li>Cherry tomatoes, halved</li>
+          <li>1 tbsp olive oil</li>
+          <li>Lemon, salt & pepper</li>
+        </ul>
+      </section>
+
+      <section class="steps">
+        <h2>Method</h2>
+        <ol>
+          <li>Season chicken and grill 6–8 minutes per side until cooked.</li>
+          <li>Toss greens and tomatoes with olive oil and lemon.</li>
+          <li>Slice chicken, place on salad, serve immediately.</li>
+        </ol>
+      </section>
+
+      <aside class="meta">
+        <p><strong>Tags:</strong> <span class="pill">High Protein</span> <span class="pill">Low Carb</span></p>
+      </aside>
+    </article>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© <span id="year4"></span> RecipeRack</p></div></footer>
+
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

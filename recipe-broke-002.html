@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bread Pizza — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+  <a href="index.html" class="logo">RecipeRack</a>
+  <nav class="main-nav">
+    <a href="category-new-page1.html">New</a>
+    <a href="category-fitness-page1.html">Fitness Freak</a>
+    <a href="category-guilty-page1.html">Guilty Pleasure</a>
+    <a class="active" href="category-broke-page1.html">Broke or Rock</a>
+  </nav>
+</div></header>
+
+<main class="container recipe-detail">
+  <article>
+    <header><h1>Bread Pizza</h1><p class="muted">Prep 5m • Cook 8–10m • Serves 1</p></header>
+
+    <figure class="detail-figure">
+      <a href="#bread-img" class="thumb"><img src="images/brok-Bread Pizza.jpg" alt="Bread pizza on plate" width="180px"></a>
+      <figcaption class="muted">Click image to enlarge.</figcaption>
+    </figure>
+
+    <div id="bread-img" class="modal"><div class="modal-inner">
+      <a href="#close" class="modal-close">✕</a>
+      <img src="images/brok-Bread Pizza.jpg" alt="Large bread pizza" />
+    </div></div>
+
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>Bread slices (1–2)</li>
+        <li>Tomato ketchup or pizza sauce</li>
+        <li>Grated cheese</li>
+        <li>Chopped onion, capsicum, tomato (optional)</li>
+        <li>Oregano/chilli flakes</li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <h2>Method</h2>
+      <ol>
+        <li>Spread sauce on bread slices.</li>
+        <li>Top with veggies and grated cheese.</li>
+        <li>Bake in oven or toast in a pan until cheese melts and edges are crisp.</li>
+        <li>Sprinkle oregano or chilli flakes and serve.</li>
+      </ol>
+    </section>
+
+    <aside class="meta"><p><strong>Tags:</strong> <span class="pill">Cheap</span> <span class="pill">Snack</span></p></aside>
+  </article>
+</main>
+
+<footer class="site-footer"><div class="container"><p>© <span id="year-bk2"></span> RecipeRack</p></div></footer>
+<script>document.getElementById('year-bk2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RecipeRack — Discover Delicious Recipes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head> 
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">RecipeRack</a>
+
+      <nav class="main-nav" aria-label="Main">
+        <a href="category-new-page1.html">New</a>
+        <a href="category-fitness-page1.html">Fitness Freak</a>
+        <a href="category-guilty-page1.html">Guilty Pleasure</a>
+        <a href="category-broke-page1.html">Broke or Rock</a>
+      </nav>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">☰</button>
+    </div>
+
+    <!-- Mobile nav (hidden on desktop) -->
+    <nav id="mobile-menu" class="mobile-nav" aria-hidden="true">
+      <a href="category-new-page1.html">New</a>
+      <a href="category-fitness-page1.html">Fitness Freak</a>
+      <a href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a href="category-broke-page1.html">Broke or Rock</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Discover Delicious Recipes</h1>
+        <p class="lead">Find recipes for every mood — healthy, indulgent, and budget-friendly. Browse by category or explore featured dishes.</p>
+        <p><a class="btn primary" href="category-new-page1.html">Browse New Recipes</a></p>
+      </div>
+
+      <figure class="hero-image" aria-hidden="true">
+        <img src="images/Fresh Salad.jpg" alt="Bowl of fresh salad with greens and chickpeas">
+      </figure>
+    </section>
+
+    <section class="featured container" aria-label="Featured recipes"> 
+      <h2>Featured Recipes</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <a href="recipe-001.html" class="card-media">
+            <img src="images/Grilled Chicken Salad.jpg" alt="Grilled chicken salad on a plate" />
+          </a>
+          <div class="card-body">
+            <h3><a href="recipe-001.html">Grilled Chicken Salad</a></h3>
+            <p class="muted">Light, high-protein salad — perfect for post-workout.</p>
+            <p><a class="link" href="recipe-001.html">View Recipe →</a></p>
+          </div> 
+        </article>
+
+        <article class="card">
+          <a class="card-media" href="recipe-002.html">
+            <img src="images/Chocolate brownie.jpg" alt="Chocolate brownie slice" />
+          </a>
+          <div class="card-body">
+            <h3><a href="recipe-002.html">Chocolate Brownie</a></h3>
+            <p class="muted">Decadent treat for guilty pleasures.</p>
+            <p><a class="link" href="recipe-002.html">View Recipe →</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card-media" href="recipe-003.html">
+            <img src="images/Pot Egg Rice.jpg" alt="Simple egg fried rice in bowl" />
+          </a>
+          <div class="card-body">
+            <h3><a href="recipe-003.html">One-Pot Egg Rice</a></h3>
+            <p class="muted">Cheap, quick and filling — great for students.</p>
+            <p><a class="link" href="recipe-003.html">View Recipe →</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="categories container">
+      <h2>Categories</h2>
+      <div class="category-grid">
+        <a class="category-card" href="category-new-page1.html">
+          <img src="images/Herbs and Vegies.jpg" alt="Fresh herbs and vegetables" />
+          <strong>New</strong>
+          <span>Latest additions</span>
+        </a>
+
+        <a class="category-card" href="category-fitness-page1.html">
+          <img src="images/Smoothie bowl.jpg" alt="Healthy smoothie bowl" />
+          <strong>Fitness Freak</strong>
+          <span>High-protein, low-fat</span>
+        </a>
+
+        <a class="category-card" href="category-guilty-page1.html">
+          <img src="images/french fries and burger.jpg" alt="Plate of french fries and burger" />
+          <strong>Guilty Pleasure</strong>
+          <span>Indulgent comfort food</span>
+        </a>
+
+        <a class="category-card" href="category-broke-page1.html">
+          <img src="images/broke1.jpg" alt="Simple ingredients on a table" />
+          <strong>Broke or Rock</strong>
+          <span>Cheap & tasty</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> RecipeRack — Built with HTML & CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    // tiny script for mobile menu toggle & year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const mobile = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      mobile.classList.toggle('open');
+      mobile.setAttribute('aria-hidden', expanded ? 'true' : 'false');
+    });
+  </script>
+</body>
+</html>
