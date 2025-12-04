@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loaded Fries — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">RecipeRack</a>
+    <nav class="main-nav">
+      <a href="category-new-page1.html">New</a>
+      <a href="category-fitness-page1.html">Fitness Freak</a>
+      <a class="active" href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a href="category-broke-page1.html">Broke or Rock</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container recipe-detail">
+  <article>
+    <header>
+      <h1>Loaded Fries</h1>
+      <p class="muted">Prep 10m • Cook 15m • Serves 2</p>
+    </header>
+
+    <figure class="detail-figure">
+      <a href="#lf-img" class="thumb">
+        <img src="images/com-French Fries.jpg" width="180px" alt="Loaded fries with cheese and toppings" />
+      </a>
+      <figcaption class="muted">Click image to enlarge.</figcaption>
+    </figure>
+
+    <div id="lf-img" class="modal">
+      <div class="modal-inner">
+        <a href="#close" class="modal-close">✕</a>
+        <img src="images/com-French Fries.jpg" alt="Large loaded fries" />
+      </div>
+    </div>
+
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>400g frozen or fresh fries</li>
+        <li>1 cup shredded cheese (cheddar/mozzarella)</li>
+        <li>2 tbsp mayonnaise</li>
+        <li>1 tbsp hot sauce (optional)</li>
+        <li>Chopped spring onions, jalapeños, bacon bits (optional)</li>
+        <li>Salt & pepper</li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <h2>Method</h2>
+      <ol>
+        <li>Cook fries according to package or oven-bake until crispy.</li>
+        <li>Arrange fries on a baking tray, sprinkle cheese and bacon bits.</li>
+        <li>Bake 3–5 minutes until cheese melts.</li>
+        <li>Mix mayo and hot sauce; drizzle over fries and top with onions & jalapeños.</li>
+      </ol>
+    </section>
+
+    <aside class="meta">
+      <p><strong>Tags:</strong> <span class="pill">Comfort</span> <span class="pill">Share</span></p>
+    </aside>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>© <span id="year-g1"></span> RecipeRack</p></div>
+</footer>
+<script>document.getElementById('year-g1').textContent = new Date().getFullYear();</script>
+</body>
+</html>

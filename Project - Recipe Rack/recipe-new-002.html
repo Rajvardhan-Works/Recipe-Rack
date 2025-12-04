@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veggie Stir-Fry — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">RecipeRack</a>
+    <nav class="main-nav">
+      <a class="active" href="category-new-page1.html">New</a>
+      <a href="category-fitness-page1.html">Fitness Freak</a>
+      <a href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a href="category-broke-page1.html">Broke or Rock</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container recipe-detail">
+
+  <article>
+    <header>
+      <h1>Veggie Stir-Fry</h1>
+      <p class="muted">Prep 5m • Cook 10m • Serves 1</p>
+    </header>
+
+    <figure class="detail-figure">
+      <a href="#stirfry-img" class="thumb">
+        <img src="images/new-veggie stir fry.jpg" width="180px" alt="Veggie stir fry bowl">
+      </a>
+      <figcaption class="muted">Click image to enlarge.</figcaption>
+    </figure>
+
+    <div id="stirfry-img" class="modal">
+      <div class="modal-inner">
+        <a href="#close" class="modal-close">✕</a>
+        <img src="images/new-veggie stir fry.jpg" alt="">
+      </div>
+    </div>
+
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 cup mixed vegetables</li>
+        <li>1 tbsp oil</li>
+        <li>1 tbsp soy sauce</li>
+        <li>½ tsp garlic paste</li>
+        <li>½ tsp chili flakes</li>
+        <li>Salt to taste</li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <h2>Method</h2>
+      <ol>
+        <li>Heat oil in a pan.</li>
+        <li>Add all vegetables and stir on high flame.</li>
+        <li>Add soy sauce, garlic, chili, and salt.</li>
+        <li>Cook until veggies are slightly soft but crunchy.</li>
+        <li>Serve with rice or noodles.</li>
+      </ol>
+    </section>
+
+    <aside class="meta">
+      <strong>Tags:</strong> <span class="pill">Vegan</span> <span class="pill">10-minute</span>
+    </aside>
+
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year2"></span> RecipeRack</p>
+  </div>
+</footer>
+
+<script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

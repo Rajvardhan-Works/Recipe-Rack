@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quinoa Power Bowl — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">RecipeRack</a>
+    <nav class="main-nav">
+      <a href="category-new-page1.html">New</a>
+      <a class="active" href="category-fitness-page1.html">Fitness Freak</a>
+      <a href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a href="category-broke-page1.html">Broke or Rock</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container recipe-detail">
+  <article>
+    <header>
+      <h1>Quinoa Power Bowl</h1>
+      <p class="muted">Prep 15m • Cook 20m • Serves 2</p>
+    </header>
+
+    <figure class="detail-figure">
+      <a href="#quinoa-img" class="thumb">
+        <img src="images/fit-Quinoa Power Bowl.jpg" width="180px" alt="Quinoa power bowl with veggies" />
+      </a>
+      <figcaption class="muted">Click image to enlarge.</figcaption>
+    </figure>
+
+    <div id="quinoa-img" class="modal">
+      <div class="modal-inner">
+        <a href="#close" class="modal-close">✕</a>
+        <img src="images/fit-Quinoa Power Bowl.jpg" alt="Large quinoa power bowl" />
+      </div>
+    </div>
+
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 cup quinoa (rinsed)</li>
+        <li>2 cups water or broth</li>
+        <li>1 cup roasted sweet potato cubes</li>
+        <li>1 cup chickpeas (roasted)</li>
+        <li>Handful spinach or kale</li>
+        <li>Olive oil, lemon, salt, pepper</li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <h2>Method</h2>
+      <ol>
+        <li>Cook quinoa in water/broth until fluffy (≈15 min).</li>
+        <li>Toss roasted sweet potato and chickpeas with a little oil and salt.</li>
+        <li>Assemble bowl: quinoa base, add veggies, greens and chickpeas.</li>
+        <li>Drizzle lemon and olive oil, season to taste, serve warm.</li>
+      </ol>
+    </section>
+
+    <aside class="meta">
+      <p><strong>Tags:</strong> <span class="pill">High Protein</span> <span class="pill">Fiber</span></p>
+    </aside>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>© <span id="year-q"></span> RecipeRack</p></div>
+</footer>
+<script>document.getElementById('year-q').textContent = new Date().getFullYear();</script>
+</body>
+</html>

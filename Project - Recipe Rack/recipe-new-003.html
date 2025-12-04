@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classic Tiramisu — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">RecipeRack</a>
+    <nav class="main-nav">
+      <a class="active" href="category-new-page1.html">New</a>
+      <a href="category-fitness-page1.html">Fitness Freak</a>
+      <a href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a href="category-broke-page1.html">Broke or Rock</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container recipe-detail">
+
+  <article>
+    <header>
+      <h1>Classic Tiramisu</h1>
+      <p class="muted">Prep 30m • Chill 2h • Serves 4</p>
+    </header>
+
+    <figure class="detail-figure">
+      <a href="#tiramisu-img" class="thumb">
+        <img src="images/new-Classic Tiramisu.jpg" width="180px" alt="Tiramisu dessert slice">
+      </a>
+      <figcaption class="muted">Click image to enlarge.</figcaption>
+    </figure>
+
+    <div id="tiramisu-img" class="modal">
+      <div class="modal-inner">
+        <a href="#close" class="modal-close">✕</a>
+        <img src="images/new-Classic Tiramisu.jpg" alt="">
+      </div>
+    </div>
+
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>200g mascarpone cheese</li>
+        <li>1 cup whipped cream</li>
+        <li>1 cup coffee</li>
+        <li>10+ ladyfinger biscuits</li>
+        <li>Cocoa powder</li>
+        <li>¼ cup sugar</li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <h2>Method</h2>
+      <ol>
+        <li>Whip mascarpone and sugar until smooth.</li>
+        <li>Fold in whipped cream.</li>
+        <li>Dip biscuits in coffee and layer them.</li>
+        <li>Spread cream mixture on top.</li>
+        <li>Repeat layers and dust with cocoa.</li>
+        <li>Refrigerate for 2 hrs before serving.</li>
+      </ol>
+    </section>
+
+    <aside class="meta">
+      <strong>Tags:</strong> <span class="pill">Dessert</span> <span class="pill">Italian</span>
+    </aside>
+
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year3"></span> RecipeRack</p>
+  </div>
+</footer>
+
+<script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

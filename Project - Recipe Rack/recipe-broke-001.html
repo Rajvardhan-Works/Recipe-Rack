@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Masala Maggie — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">RecipeRack</a>
+    <nav class="main-nav">
+      <a href="category-new-page1.html">New</a>
+      <a href="category-fitness-page1.html">Fitness Freak</a>
+      <a href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a class="active" href="category-broke-page1.html">Broke or Rock</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container recipe-detail">
+  <article>
+    <header>
+      <h1>Masala Maggie</h1>
+      <p class="muted">Prep 2m • Cook 5m • Serves 1</p>
+    </header>
+
+    <figure class="detail-figure">
+      <a href="#maggie-img" class="thumb">
+        <img src="images/brok-Masala Noodles.jpg" alt="Bowl of masala maggie noodles" width="180px">
+      </a>
+      <figcaption class="muted">Click image to enlarge.</figcaption>
+    </figure>
+
+    <div id="maggie-img" class="modal"><div class="modal-inner">
+      <a href="#close" class="modal-close">✕</a>
+      <img src="images/brok-Masala Noodles.jpg" alt="Large masala maggie" />
+    </div></div>
+
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 packet instant noodles (maggie)</li>
+        <li>1½ cups water</li>
+        <li>Vegetables (onion, tomato, peas) — optional</li>
+        <li>2 tbsp oil, salt & spices</li>
+        <li>Masala packet (from the noodles)</li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <h2>Method</h2>
+      <ol>
+        <li>Heat oil, sauté onions/tomato quickly (optional).</li>
+        <li>Add water and bring to boil.</li>
+        <li>Add noodles and cook 2 minutes, then add masala and vegetables.</li>
+        <li>Stir and cook until water reduces to desired consistency. Serve hot.</li>
+      </ol>
+    </section>
+
+    <aside class="meta">
+      <p><strong>Tags:</strong> <span class="pill">Budget</span> <span class="pill">Quick</span></p>
+    </aside>
+  </article>
+</main>
+
+<footer class="site-footer"><div class="container"><p>© <span id="year-bk1"></span> RecipeRack</p></div></footer>
+<script>document.getElementById('year-bk1').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One-Pot Egg Rice — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">RecipeRack</a>
+    <nav class="main-nav">
+      <a href="category-new-page1.html">New</a>
+      <a href="category-fitness-page1.html">Fitness Freak</a>
+      <a href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a href="category-broke-page1.html">Broke or Rock</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container recipe-detail">
+
+  <article>
+
+    <header>
+      <h1>One-Pot Egg Rice</h1>
+      <p class="muted">Prep 5m • Cook 10m • Serves 1–2</p>
+    </header>
+
+    <figure class="detail-figure">
+      <a href="#rice-img" class="thumb">
+        <img src="images/Pot Egg Rice.jpg" alt="One-pot egg fried rice" width="180px">
+      </a>
+      <figcaption class="muted">Click image to enlarge.</figcaption>
+    </figure>
+
+    <!-- CSS-only Modal -->
+    <div id="rice-img" class="modal">
+      <div class="modal-inner">
+        <a href="#close" class="modal-close">✕</a>
+        <img src="images/Pot Egg Rice.jpg" alt="Large egg fried rice image">
+      </div>
+    </div>
+
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 cup cooked rice</li>
+        <li>2 eggs</li>
+        <li>1 tbsp oil</li>
+        <li>½ onion, chopped</li>
+        <li>½ tsp soy sauce</li>
+        <li>Salt & pepper to taste</li>
+        <li>Spring onions for garnish</li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <h2>Method</h2>
+      <ol>
+        <li>Heat oil in a pan; scramble eggs and keep aside.</li>
+        <li>Sauté onions until slightly golden.</li>
+        <li>Add cooked rice, soy sauce, salt, and pepper.</li>
+        <li>Mix in scrambled eggs.</li>
+        <li>Cook for 2–3 minutes, garnish with spring onions.</li>
+        <li>Serve warm and enjoy.</li>
+      </ol>
+    </section>
+
+    <aside class="meta">
+      <p><strong>Tags:</strong> <span class="pill">Budget Recipe</span> <span class="pill">Quick</span></p>
+    </aside>
+
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year3"></span> RecipeRack</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year3').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

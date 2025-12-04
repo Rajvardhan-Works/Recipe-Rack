@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chocolate Lava Cake — RecipeRack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">RecipeRack</a>
+    <nav class="main-nav">
+      <a href="category-new-page1.html">New</a>
+      <a href="category-fitness-page1.html">Fitness Freak</a>
+      <a class="active" href="category-guilty-page1.html">Guilty Pleasure</a>
+      <a href="category-broke-page1.html">Broke or Rock</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container recipe-detail">
+  <article>
+    <header>
+      <h1>Chocolate Lava Cake</h1>
+      <p class="muted">Prep 10m • Bake 12–14m • Serves 4</p>
+    </header>
+
+    <figure class="detail-figure">
+      <a href="#lava-img" class="thumb">
+        <img src="images/com-Choco Lava Cake.jpg" width="180px" alt="Chocolate lava cake with molten center" />
+      </a>
+      <figcaption class="muted">Click image to enlarge.</figcaption>
+    </figure>
+
+    <div id="lava-img" class="modal">
+      <div class="modal-inner">
+        <a href="#close" class="modal-close">✕</a>
+        <img src="images/com-Choco Lava Cake.jpg" alt="Large lava cake" />
+      </div>
+    </div>
+
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>100g dark chocolate</li>
+        <li>100g butter</li>
+        <li>2 eggs + 2 egg yolks</li>
+        <li>½ cup sugar</li>
+        <li>¼ cup flour</li>
+        <li>Pinch of salt</li>
+      </ul>
+    </section>
+
+    <section class="steps">
+      <h2>Method</h2>
+      <ol>
+        <li>Melt chocolate and butter together and let cool slightly.</li>
+        <li>Whisk eggs, yolks and sugar until pale.</li>
+        <li>Fold chocolate mixture and sifted flour into the eggs.</li>
+        <li>Pour into greased ramekins and bake at 200°C for 12–14 minutes.</li>
+        <li>Invert onto plates and serve immediately with ice cream.</li>
+      </ol>
+    </section>
+
+    <aside class="meta">
+      <p><strong>Tags:</strong> <span class="pill">Dessert</span> <span class="pill">Indulgent</span></p>
+    </aside>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>© <span id="year-g2"></span> RecipeRack</p></div>
+</footer>
+<script>document.getElementById('year-g2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
