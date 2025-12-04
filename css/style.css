@@ -50,9 +50,58 @@ body{
 .main-nav a:hover, .main-nav a:focus, .main-nav a.active{color:var(--text); background:rgba(217,115,43,0.06);}
 .menu-toggle{display:none; border:0; background:none; font-size:1.25rem; cursor:pointer;}
 
-/* Mobile nav (hidden desktop) */
-.mobile-nav{display:none; text-decoration:none; flex-direction:column; gap:0.25rem; padding:0.5rem 1rem; border-top:1px solid #eef2f6;}
-.mobile-nav.open{display:flex;}
+/* Mobile nav (hidden on desktop, visible when .open) */
+.mobile-nav {
+  display: none;                 /* hidden by default on desktop */
+  position: absolute;            /* floats over page when opened */
+  top: 68px;                     /* adjust to match header height */
+  right: 12px;
+  width: calc(100% - 24px);      /* full width minus horizontal padding */
+  max-width: 360px;              /* limit on larger phones/tablets */
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.08);
+  z-index: 60;
+  flex-direction: column;
+  gap: 0.25rem;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+
+/* Mobile nav links — remove default browser blue/underline and make tappable */
+.mobile-nav a,
+.mobile-nav a:link,
+.mobile-nav a:visited {
+  color: var(--muted);
+  text-decoration: none;
+  display: block;
+  padding: 0.65rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background .15s ease, color .15s ease;
+}
+
+/* Visible states */
+.mobile-nav.open {
+  display: flex;
+  animation: slideDown .12s ease-out;
+}
+
+/* Hover / focus / active */
+.mobile-nav a:hover,
+.mobile-nav a:focus,
+.mobile-nav a:active {
+  color: var(--text);
+  background: rgba(217,115,43,0.06); /* subtle highlight */
+  outline: none;
+}
+
+/* Strong focus ring for keyboard users */
+.mobile-nav a:focus {
+  box-shadow: 0 0 0 4px rgba(217,115,43,0.12);
+}
+
 
 /* Hero */
 .hero{display:flex; align-items:center; gap:2rem; padding:3rem 0;}
@@ -113,24 +162,34 @@ body{
 /* Footer */
 .site-footer{padding:1rem 0; text-align:center; color:var(--muted); border-top:1px solid #eef2f6; margin-top:2rem;}
 
-/* Responsive */
-@media (max-width:1000px){
-  .cards-grid{grid-template-columns:repeat(2,1fr);}
-  .category-grid{grid-template-columns:repeat(2,1fr);}
-  .recipes-grid{grid-template-columns:repeat(2,1fr);}
-  .rc-img img{width:180px;}
+/* Tablet-ish breakpoint */
+@media (max-width:1000px) {
+  .cards-grid { grid-template-columns: repeat(2,1fr); }
+  .category-grid { grid-template-columns: repeat(2,1fr); }
+  .recipes-grid { grid-template-columns: repeat(2,1fr); }
+  .rc-img img { width: 180px; height: 140px; object-fit: cover; }
 }
-@media (max-width:640px){
-  .hero{flex-direction:column; text-align:center;}
-  .hero-image{order:2}
-  .menu-toggle{display:block;}
-  .main-nav{display:none;}
-  .mobile-nav{display:none;}
-  .category-grid{grid-template-columns:1fr;}
-  .cards-grid{grid-template-columns:1fr;}
-  .recipes-grid{grid-template-columns:1fr;}
-  .rc-img img{width:100%; height:200px; object-fit:cover;}
-  .rc-body{padding:0.75rem;}
+
+/* Mobile breakpoint */
+@media (max-width:640px) {
+  .hero { flex-direction: column; text-align: center; padding: 2rem 1rem; }
+  .hero-image { order: 2; margin-top: 1rem; }
+  .menu-toggle { display: block; }      /* show hamburger */
+  .main-nav { display: none; }          /* hide desktop nav */
+  /* NOTE: Do NOT forcibly hide .mobile-nav here; .mobile-nav.open will show */
+  .category-grid { grid-template-columns: 1fr; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .recipes-grid { grid-template-columns: 1fr; }
+  .rc-img img { width: 100%; height: 200px; object-fit: cover; }
+  .rc-body { padding: 0.75rem; }
+
+  /* Make the mobile menu full width on tiny screens for better UX */
+  .mobile-nav {
+    right: 8px;
+    left: 8px;
+    width: auto;
+    max-width: none;
+  }
 }
 
 /* Accessibility focus */
